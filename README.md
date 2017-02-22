@@ -1,2 +1,4 @@
 # android-example
-Base Application / Template for Android
+
+Just basic things of android example
+that created by newbie mobile developers
