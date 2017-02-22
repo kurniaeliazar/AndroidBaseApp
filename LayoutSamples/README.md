@@ -9,4 +9,4 @@
 6. Single activity with multiple fragment
 
 ##Screenshot
-![alt text](https://github.com/kurniaeliazar/android-example/blob/master/LayoutSamples/layout-sample.jpg"Layout samples")
+![alt text](https://github.com/kurniaeliazar/android-example/blob/master/LayoutSamples/layout-sample.jpg "Layout samples")
