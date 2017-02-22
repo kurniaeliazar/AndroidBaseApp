@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Layout Samples</string>
+    <string name="relative">Relative Layout</string>
+    <string name="linear">Linear Layout</string>
+    <string name="constrain">Constraint Layout</string>
+    <string name="frame">Frame Layout</string>
+    <string name="grid">Grid Layouts</string>
+    <string name="table">Table Layout</string>
+    <string name="reminder">Reminder</string>
+    <string name="done">Done</string>
+    <string name="to">To</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="send">Send</string>
+    <string name="dummy">Dummy</string>
+    <string name="utama">Widyatama University</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
