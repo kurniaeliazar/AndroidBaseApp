@@ -13,6 +13,7 @@ import android.view.ViewGroup;
  */
 public class GridFragment extends Fragment {
 
+    public final static String TAG = "Grid";
 
     public GridFragment() {
         // Required empty public constructor

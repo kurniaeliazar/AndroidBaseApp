@@ -12,6 +12,9 @@ import android.view.ViewGroup;
  * A simple {@link Fragment} subclass.
  */
 public class ConstraintFragment extends Fragment {
+
+    public final static String TAG = "Constraint";
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

@@ -13,6 +13,7 @@ import android.view.ViewGroup;
  */
 public class TableFragment extends Fragment {
 
+    public final static String TAG = "Table";
 
     public TableFragment() {
         // Required empty public constructor

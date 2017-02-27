@@ -24,32 +24,32 @@
 
         <Button
             android:id="@+id/btn_relative"
-            style="@style/ButtonOnBoarding"
+            style="@style/RoundedButton"
             android:text="@string/relative" />
 
         <Button
             android:id="@+id/btn_linear"
-            style="@style/ButtonOnBoarding"
+            style="@style/RoundedButton"
             android:text="@string/linear" />
 
         <Button
             android:id="@+id/btn_contraint"
-            style="@style/ButtonOnBoarding"
+            style="@style/RoundedButton"
             android:text="@string/constrain" />
 
         <Button
             android:id="@+id/btn_frame"
-            style="@style/ButtonOnBoarding"
+            style="@style/RoundedButton"
             android:text="@string/frame" />
 
         <Button
             android:id="@+id/btn_table"
-            style="@style/ButtonOnBoarding"
+            style="@style/RoundedButton"
             android:text="@string/table" />
 
         <Button
             android:id="@+id/btn_grid"
-            style="@style/ButtonOnBoarding"
+            style="@style/RoundedButton"
             android:text="@string/grid" />
 
     </LinearLayout>

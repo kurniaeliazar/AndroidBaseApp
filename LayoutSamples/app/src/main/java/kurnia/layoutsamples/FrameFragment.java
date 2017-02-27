@@ -13,6 +13,7 @@ import android.view.ViewGroup;
  */
 public class FrameFragment extends Fragment {
 
+    public final static String TAG = "Frame";
 
     public FrameFragment() {
         // Required empty public constructor

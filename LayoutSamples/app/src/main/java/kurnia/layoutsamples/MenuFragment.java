@@ -4,6 +4,7 @@ package kurnia.layoutsamples;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,13 +49,21 @@ public class MenuFragment extends Fragment {
 
     }
 
-    public void changeFragment(Fragment fragment){
+    public void changeFragment(Fragment fragment, String fragmentTag){
         FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
         // Replace whatever is in the fragment_container view with this fragment,
         // and add the transaction to the back stack so the user can navigate back
         transaction.replace(R.id.fragment_container, fragment);
-        transaction.addToBackStack(null);
+        transaction.addToBackStack(fragmentTag);
+        Log.d("Menu Fragment", "changeFragment: " + fragmentTag);
 
+        // if we are not using butterknife
+//        linearebtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//            }
+//        });
         // Commit the transaction
         transaction.commit();
     }
@@ -62,21 +71,21 @@ public class MenuFragment extends Fragment {
     @OnClick(R.id.btn_relative)
     public void onClickBtnRelative(){
         RelativeFragment relativeFragment = new RelativeFragment();
-        changeFragment(relativeFragment);
+        changeFragment(relativeFragment, relativeFragment.TAG);
 
     }
 
     @OnClick(R.id.btn_linear)
     public void onClickBtnLinear(){
         LinearFragment linearFragment = new LinearFragment();
-        changeFragment(linearFragment);
+        changeFragment(linearFragment, linearFragment.TAG);
 
     }
 
     @OnClick(R.id.btn_contraint)
     public void onClickBtnConstraint(){
         ConstraintFragment constraintFragment = new ConstraintFragment();
-        changeFragment(constraintFragment);
+        changeFragment(constraintFragment, constraintFragment.TAG);
 
     }
 
@@ -84,7 +93,7 @@ public class MenuFragment extends Fragment {
     @OnClick(R.id.btn_frame)
     public void onClickBtnFrame(){
         FrameFragment frameFragment = new FrameFragment();
-        changeFragment(frameFragment);
+        changeFragment(frameFragment, frameFragment.TAG);
 
     }
 
@@ -92,7 +101,7 @@ public class MenuFragment extends Fragment {
     @OnClick(R.id.btn_grid)
     public void onClickBtnGrid(){
         GridFragment gridFragment = new GridFragment();
-        changeFragment(gridFragment);
+        changeFragment(gridFragment, gridFragment.TAG);
 
     }
 
@@ -100,7 +109,7 @@ public class MenuFragment extends Fragment {
     @OnClick(R.id.btn_table)
     public void onClickBtnTable(){
         TableFragment tableFragment = new TableFragment();
-        changeFragment(tableFragment);
+        changeFragment(tableFragment, TableFragment.TAG);
 
     }
 
