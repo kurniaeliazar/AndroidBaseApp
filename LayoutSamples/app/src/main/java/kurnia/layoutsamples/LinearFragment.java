@@ -44,6 +44,9 @@ public class LinearFragment extends Fragment {
         FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
 
         FrameFragment frameFragment = new FrameFragment();
+        Bundle args = new Bundle();
+        args.putInt("num", 5);
+        frameFragment.setArguments(args);
 
         transaction.replace(R.id.fragment_container2, frameFragment);
         transaction.addToBackStack(frameFragment.TAG);

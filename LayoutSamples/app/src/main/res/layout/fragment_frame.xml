@@ -9,7 +9,7 @@
         android:layout_width="fill_parent"/>
 
     <TextView
-        android:text="Frame Demo"
+        android:id="@+id/text_frame"
         android:textSize="30px"
         android:textStyle="bold"
         android:layout_height="fill_parent"
