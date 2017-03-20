@@ -4,6 +4,7 @@ package com.studentbook.kurniaeliazar.fragments;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -22,36 +23,42 @@ import java.util.List;
  */
 public class ListFragment extends Fragment {
 
-    List<Student> listStudent = new ArrayList<>();
+
     private RecyclerView recyclerView;
     private StudentAdapter studentAdapter;
 
-
+    List<Student> listStudent = new ArrayList<>();
 
     public ListFragment() {
         Student studentA = new Student();
         studentA.setName("Mahasiswa A");
         studentA.setAge(24);
+        studentA.setFaculty("Teknik Informatika");
 
         Student studentB = new Student();
         studentB.setName("Mahasiswa B");
         studentB.setAge(25);
+        studentB.setFaculty("Teknik Informatika");
 
         Student studentC = new Student();
         studentC.setName("Mahasiswa C");
         studentC.setAge(24);
+        studentC.setFaculty("Teknik Informatika");
 
         Student studentD = new Student();
         studentD.setName("Mahasiswa D");
         studentD.setAge(23);
+        studentD.setFaculty("Teknik Industri");
 
         Student studentE = new Student();
         studentE.setName("Mahasiswa E");
         studentE.setAge(26);
+        studentE.setFaculty("Teknik Industri");
 
         Student studentF = new Student();
         studentF.setName("Mahasiswa F");
         studentF.setAge(25);
+        studentF.setFaculty("Teknik Industri");
 
         listStudent.add(studentA);
         listStudent.add(studentB);
@@ -59,6 +66,10 @@ public class ListFragment extends Fragment {
         listStudent.add(studentD);
         listStudent.add(studentE);
         listStudent.add(studentF);
+
+//        for(int i=0; i<30 ; i++){
+//            listStudent.add(studentA);
+//        }
 
         // Required empty public constructor
     }
@@ -73,10 +84,9 @@ public class ListFragment extends Fragment {
 
         recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
 
-        studentAdapter = new StudentAdapter(listStudent);
+        studentAdapter = new StudentAdapter(getContext(), listStudent);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(studentAdapter);
         return view;
     }

@@ -1,5 +1,4 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
     package="com.studentbook.kurniaeliazar">
 
     <application
@@ -17,7 +16,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".helper.SettingActivity"></activity>
+        <activity android:name=".DetailActivity"></activity>
 
     </application>
 
