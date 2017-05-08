@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="368dp"
+    android:layout_height="495dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username : "
+        />
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="score : "
+        />
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="edit username"/>
+    <EditText
+        android:id="@+id/editScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="edit score"/>
+    <Button
+        android:id="@+id/btnStore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Store"/>
+    <Button
+        android:id="@+id/btnClearStored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear Stored"/>
+</LinearLayout>
