@@ -1,4 +1,3 @@
 # android-example
 
-Just basic things of android example
-that created by newbie mobile developers
+For academic purpose in Widyatama University
